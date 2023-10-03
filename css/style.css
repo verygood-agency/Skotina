@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --KS: "Kelly Slab", cursive;
   --AK: "Akrobat", sans-serif;
@@ -348,7 +349,10 @@ a {
   align-items: stretch;
   justify-content: flex-end;
   display: flex;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  /* Добавление перехода для плавности изменения прозрачности */
+  transition: opacity 0.5s, visibility 0.5s;
 }
 .dialog-windows__item {
   max-width: 960px;
@@ -386,8 +390,6 @@ a {
   margin-bottom: 0;
 }
 .window-about .dialog-windows {
-  display: flex;
-}
-.window-about .dialog-windows__item {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }

@@ -1,8 +1,10 @@
 .window-about {
   .dialog-windows {
-    display: flex;
+    // display: flex;
+    visibility: visible;
+    opacity: 1;
   }
-  .dialog-windows__item {
-    display: block;
-  }
+  // .dialog-windows__item {
+  //   display: block;
+  // }
 }

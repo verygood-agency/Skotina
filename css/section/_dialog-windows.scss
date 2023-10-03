@@ -11,7 +11,12 @@
   align-items: stretch;
   justify-content: flex-end;
   display: flex;
-  display: none;
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+  /* Добавление перехода для плавности изменения прозрачности */
+  transition: opacity 0.5s, visibility 0.5s;
+  
   &__item {
     max-width: 960px;
     width: 100%;
@@ -25,7 +30,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // margin-bottom: 32px;
   }
   &__close {
     margin-left: 32px;
