@@ -6,6 +6,8 @@
   --Gr: #bdbdbd;
   --Rd: #df0000;
   --mod1: rgba(255, 255, 255, 0.7);
+  --mod2: #0000007a;
+  --mod3: hsla(0, 0%, 0%, 0.9);
 }
 
 html {
@@ -142,6 +144,33 @@ a {
   .wrapper {
     padding: 0 20px;
   }
+}
+
+.sticky {
+  background-color: var(--mod3);
+  margin: 0;
+  position: sticky;
+  top: 0;
+}
+
+.simplebar-content-wrapper {
+  scrollbar-width: auto;
+  -ms-overflow-style: auto;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+  display: initial;
+  width: initial;
+  height: initial;
+}
+
+.simplebar-track {
+  background-color: #282727;
+}
+
+.simplebar-scrollbar {
+  background-color: #585858;
 }
 
 .hero {
@@ -305,4 +334,60 @@ a {
   font-style: normal;
   font-weight: 800;
   color: var(--Wt) !important;
+}
+
+.dialog-windows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  align-items: stretch;
+  justify-content: flex-end;
+  display: flex;
+  display: none;
+}
+.dialog-windows__item {
+  max-width: 960px;
+  width: 100%;
+  padding: 60px 40px 80px;
+  background-color: var(--mod3);
+  color: var(--Gr);
+  max-height: 100%;
+}
+.dialog-windows__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dialog-windows__close {
+  margin-left: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.dialog-windows__title {
+  margin: 0;
+  display: block;
+  color: var(--Wt);
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.dialog-windows__text {
+  margin: 2.2rem 0;
+}
+.dialog-windows__text:last-of-type {
+  margin-bottom: 0;
+}
+.window-about .dialog-windows {
+  display: flex;
+}
+.window-about .dialog-windows__item {
+  display: block;
 }

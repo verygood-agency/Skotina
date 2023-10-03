@@ -7,6 +7,8 @@
   --Gr: #bdbdbd;
   --Rd: #df0000;
   --mod1: rgba(255, 255, 255, 0.7);
+  --mod2: #0000007a;
+  --mod3: hsla(0, 0%, 0%, 0.9);
 }
 
 @import "site/global";
@@ -14,6 +16,18 @@
 
 @import "bem/visually-hidden";
 @import "bem/wrapper";
+@import "bem/sticky";
+@import "bem/simplebar";
 
 @import "section/hero";
 @import "section/footer";
+@import "section/dialog-windows";
+
+
+@import "activity/modal-show";
+
+
+
+
+
+
