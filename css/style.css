@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --KS: "Kelly Slab", cursive;
   --AK: "Akrobat", sans-serif;
@@ -351,7 +350,6 @@ a {
   display: flex;
   visibility: hidden;
   opacity: 0;
-  /* Добавление перехода для плавности изменения прозрачности */
   transition: opacity 0.5s, visibility 0.5s;
 }
 .dialog-windows__item {
