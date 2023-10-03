@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100%;
+  max-width: calc(1408px + 40px);
+  margin-inline: auto;
+  padding-inline: 20px;
+
+  @media (max-width: 1023px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}

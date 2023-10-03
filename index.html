@@ -11,11 +11,12 @@
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
+<body class="body">
   <section class="hero" style="background-image: url(img/bg.jpg);">
-    <div class="hero__wrap">
+    <div class="wrapper">
       <!-- скрытый заголовок  -->
       <h1 class="visually-hidden">Мясной ресторан Скотина основан в 2013 году</h1>
 
@@ -35,33 +36,106 @@
             <ul class="hero__menu-list">
               <li class="hero__list-item"><a href="#">Авторские коктейли</a></li>
               <li class="hero__list-item"><a href="#">Настойки</a></li>
-              <li class="hero__list-item"><a href="#">Special</a></li>
+              <!-- <li class="hero__list-item"><a href="#">Special</a></li> -->
             </ul>
           </li>
 
           <li class="hero__nav-item hero__nav-item--logo">
-              <img class="hero__logo" src="./img/logo.svg" alt="Мясной ресторан Скотина" title="Мясной ресторан СКОТИНА"
-                width="227">
+            <img class="hero__logo" src="./img/logo.svg" alt="Мясной ресторан Скотина" title="Мясной ресторан СКОТИНА"
+              width="227">
           </li>
 
-          <li class="hero__nav-item hero__nav-item--right">
+          <li class="hero__nav-item hero__nav-item--mod">
             <h3 class="hero__nav-title">Ресторан</h3>
             <ul class="hero__menu-list">
               <li class="hero__list-item"><a href="#">О ресторане</a></li>
               <li class="hero__list-item"><a href="#">Интерьер</a></li>
             </ul>
           </li>
-          <li class="hero__nav-item hero__nav-item--right">
+          <li class="hero__nav-item hero__nav-item--mod">
             <h3 class="hero__nav-title">Доставка</h3>
             <ul class="hero__menu-list">
               <li class="hero__list-item"><a href="#"><img src="./img/bronyboy.svg" alt="доставка Broniboy"></a></li>
-              <li class="hero__list-item"><a href="#"><img src="./img/yandex-food.svg" alt="доставка Яндекс еда"></a></li>
+              <li class="hero__list-item"><a href="#"><img src="./img/yandex-food.svg" alt="доставка Яндекс еда"></a>
+              </li>
             </ul>
           </li>
         </ul>
       </nav>
     </div>
   </section>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__item">
+          <h3 class="footer__title">Локация</h3>
+          <p class="footer__text">Краснодар, центральный округ, Суворова, 64 (2 этаж)</p>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__title">Бронирование</h3>
+          <p class="footer__text">
+            <a class="footer__tel" href="tel:+79282099188">+7 (928) 209-91-88</a><br>
+            pr: <a href="mailto:anna.pr@justdoeat.ru">anna.pr@justdoeat.ru</a><br>
+            менеджер: <a href="mailto:manager@scotina.ru">manager@scotina.ru</a>
+          </p>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__title">График работы</h3>
+          <ul class="footer__list">
+            <li>вск-чт <b>12:00-00:00</b></li>
+            <li>пт-сб <b>12:00-01:00</b></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__title">Отзывы</h3>
+          <ul class="footer__services-list">
+            <li class="footer__services-item"><a href="" class="footer__services-link">
+                <img src="./img/services/1.svg" alt="Яндекс отзывы">
+              </a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">
+                <img src="./img/services/2.svg" alt="2GIS отзывы">
+              </a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__title">Следите за нами</h3>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                  <path fill="#DF0000"
+                    d="m1.47 10.761 14.299-5.698c1.41-.593 6.196-2.494 6.196-2.494s2.21-.83 2.024 1.189c-.062.83-.55 3.74-1.043 6.887l-1.533 9.319s-.123 1.364-1.165 1.602c-1.043.237-2.762-.83-3.069-1.07-.245-.178-4.6-2.848-6.196-4.153-.432-.356-.92-1.07.06-1.901 2.211-1.958 4.848-4.393 6.44-5.935.739-.715 1.472-2.376-1.594-.356l-8.65 5.64s-.981.594-2.823.057c-1.84-.531-3.987-1.245-3.987-1.245s-1.474-.893 1.04-1.842Z" />
+                </svg>
+                <span>телеграм</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                  <g clip-path="url(#a)">
+                    <mask id="b" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse"
+                      style="mask-type:luminance">
+                      <path fill="#fff" d="M24 0H0v24h24V0Z" />
+                    </mask>
+                    <g mask="url(#b)">
+                      <path fill="#DF0000"
+                        d="M19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.95-.793-.95h-2.624c-.668 0-.976.346-1.141.732 0 0-1.336 3.198-3.226 5.27-.61.6-.892.792-1.225.792-.164 0-.419-.192-.419-.74V5.95c0-.656-.187-.95-.74-.95H9.161c-.419 0-.668.307-.668.592 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886C4.451 5.289 4.198 5 3.525 5H.9c-.749 0-.9.345-.9.73 0 .683.892 4.074 4.148 8.554C6.318 17.343 9.374 19 12.154 19c1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667C19.114 18.217 19.407 19 20.405 19h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878Z" />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h24v24H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>вконтакте</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- Yandex.Metrika counter -->
