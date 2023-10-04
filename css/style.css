@@ -256,8 +256,10 @@ a {
 }
 @media (max-width: 1200px) {
   .hero {
+    background-image: url(../img/bg-1200.jpg);
+    background-position: bottom center;
     height: initial;
-    padding: 64px 0 120px;
+    padding: 64px 0 130px;
   }
   .hero__nav-list {
     grid-template-columns: initial;
@@ -282,13 +284,17 @@ a {
   }
 }
 @media (max-width: 1023px) {
+  .hero {
+    background-image: url(../img/bg-1023.jpg);
+  }
   .hero__grid {
     gap: 24px;
     grid-template-columns: 2fr 2fr 1fr;
+    align-items: flex-start;
   }
   .hero__nav-list {
     grid-template-areas: "logo logo" "left-one right-one" "left-two right-two";
-    gap: 32px;
+    gap: 6px;
   }
   .hero__nav-item:nth-child(1) {
     grid-area: left-one;
@@ -301,12 +307,20 @@ a {
   }
   .hero__nav-item:nth-child(4) {
     grid-area: right-one;
+    align-self: flex-start;
   }
   .hero__nav-item:nth-child(5) {
     grid-area: right-two;
   }
+  .hero__menu-list {
+    min-height: initial;
+  }
 }
 @media (max-width: 767px) {
+  .hero {
+    background-image: url(../img/bg-767.jpg);
+    padding-bottom: 240px;
+  }
   .hero__nav-list {
     justify-content: center;
   }
@@ -314,7 +328,12 @@ a {
 @media (max-width: 500px) {
   .hero {
     background-image: url(../img/bg-500.jpg);
-    background-position: bottom center;
+    padding-top: 30px;
+    padding-bottom: 310px;
+  }
+  .hero__nav-list {
+    grid-template-areas: "logo logo" "left-one left-two" "right-one right-two";
+    gap: 16px;
   }
   .hero__nav-item--logo {
     padding: 0 47px;
@@ -325,6 +344,18 @@ a {
   }
   .hero__list-item {
     font-size: 15px;
+  }
+  .hero__nav-item--mod {
+    place-self: initial;
+  }
+  .hero .hero__menu-list {
+    min-height: initial;
+  }
+  .hero__nav-item {
+    margin-top: 37px;
+  }
+  .hero__nav-item:has(.hero__nav-title) {
+    margin-top: 0;
   }
 }
 
