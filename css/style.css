@@ -531,6 +531,7 @@ a:hover, a:focus, a:active {
   display: flex;
   visibility: hidden;
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.5s, visibility 0.5s;
 }
 .dialog-windows__item {
@@ -622,6 +623,7 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 .window-about .dialog-about {
+  pointer-events: initial;
   visibility: visible;
   opacity: 1;
 }
@@ -630,6 +632,7 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 .window-gallery .dialog-gallery {
+  pointer-events: initial;
   visibility: visible;
   opacity: 1;
 }

@@ -1,6 +1,7 @@
 .window-about {
   overflow: hidden;
   .dialog-about {
+    pointer-events: initial;
     visibility: visible;
     opacity: 1;
   }
@@ -9,6 +10,7 @@
 .window-gallery {
   overflow: hidden;
   .dialog-gallery {
+    pointer-events: initial;
     visibility: visible;
     opacity: 1;
   }
