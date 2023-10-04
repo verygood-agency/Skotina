@@ -59,7 +59,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-top: 32px;
-
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     a {
       display: block;
       position: relative;

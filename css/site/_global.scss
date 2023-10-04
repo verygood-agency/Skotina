@@ -42,6 +42,12 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.5s;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--Rd);
+  }
 }
 
 @media (max-width: 1200px) {
