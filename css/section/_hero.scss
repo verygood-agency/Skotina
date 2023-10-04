@@ -5,6 +5,7 @@
   width: 100%;
   max-width: 100%;
   padding-top: 43px;
+  background-image: url(../img/bg.jpg);
 
   &__nav-title {
     display: block;
@@ -75,6 +76,104 @@
 
     img {
       height: 24px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    height: initial;
+    padding: 64px 0 120px;
+    &__nav-list {
+      grid-template-columns: initial;
+      grid-template-areas:
+        "left-one logo right-one"
+        "left-two logo right-two";
+      gap: 24px 32px;
+      align-items: flex-start;
+    }
+    &__nav-item:nth-child(1) {
+      grid-area: left-one;
+    }
+    &__nav-item:nth-child(2) {
+      grid-area: left-two;
+    }
+    &__nav-item--logo {
+      grid-area: logo;
+    }
+    &__nav-item:nth-child(4) {
+      grid-area: right-one;
+    }
+    &__nav-item:nth-child(5) {
+      grid-area: right-two;
+    }
+  }
+  @media (max-width: 1023px) {
+    &__grid {
+      gap: 24px;
+      grid-template-columns: 2fr 2fr 1fr;
+    }
+    &__nav-list {
+      grid-template-areas:
+        "logo logo"
+        "left-one right-one"
+        "left-two right-two";
+      gap: 32px;
+    }
+    &__nav-item:nth-child(1) {
+      grid-area: left-one;
+    }
+    &__nav-item:nth-child(2) {
+      grid-area: left-two;
+    }
+    &__nav-item--logo {
+      grid-area: logo;
+    }
+    &__nav-item:nth-child(4) {
+      grid-area: right-one;
+    }
+    &__nav-item:nth-child(5) {
+      grid-area: right-two;
+    }
+  }
+  @media (max-width: 767px) {
+    &__nav-list {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 500px) {
+    background-image: url(../img/bg-500.jpg);
+    background-position: bottom center;
+    //   &__nav-list {
+    //     grid-template-areas: initial;
+    //     grid-template-columns: 1fr;
+    //   }
+    //   &__nav-item:nth-child(1) {
+    //     grid-area: initial;
+    //   }
+    //   &__nav-item:nth-child(2) {
+    //     grid-area: initial;
+    //   }
+    //   &__nav-item--logo {
+    //     grid-area: initial;
+    //     grid-row-start: 1;
+    //   }
+    //   &__nav-item:nth-child(4) {
+    //     grid-area: initial;
+    //   }
+    //   &__nav-item:nth-child(5) {
+    //     grid-area: initial;
+    //   }
+    //   &__nav-item--mod {
+    //     place-self: initial;
+    // }
+    &__nav-item--logo {
+      padding: 0 47px;
+    }
+    &__nav-title {
+      margin-bottom: 12px;
+      font-size: 25px;
+    }
+    &__list-item {
+      font-size: 15px;
     }
   }
 }

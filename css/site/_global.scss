@@ -21,6 +21,7 @@ body {
   color: var(--Gr);
   position: relative;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 img {
@@ -41,4 +42,10 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 1200px) {
+  body {
+    height: initial;
+  }
 }
