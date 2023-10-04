@@ -1,5 +1,14 @@
 .window-about {
-  .dialog-windows {
+  overflow: hidden;
+  .dialog-about {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.window-gallery {
+  overflow: hidden;
+  .dialog-gallery {
     visibility: visible;
     opacity: 1;
   }
