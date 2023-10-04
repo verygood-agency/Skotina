@@ -597,6 +597,11 @@ a {
     margin-left: 12px;
   }
 }
+@media (max-width: 500px) {
+  .dialog-windows__gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .window-about {
   overflow: hidden;
